@@ -3,6 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeModule } from "./components/home/home.module";
+import {RouterModule} from "@angular/router";
+import {HttpClientModule} from "@angular/common/http";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {ToastModule} from "ng-bootstrap-ext";
 
 @NgModule({
   declarations: [
@@ -10,7 +16,14 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HomeModule,
+    RouterModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
+    NgbModule,
+    ToastModule
   ],
   providers: [],
   bootstrap: [AppComponent]
