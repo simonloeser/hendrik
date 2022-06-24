@@ -9,10 +9,12 @@ import {HttpClientModule} from "@angular/common/http";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {ToastModule} from "ng-bootstrap-ext";
+import { PicsComponent } from './components/pics/pics.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PicsComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +25,8 @@ import {ToastModule} from "ng-bootstrap-ext";
     ReactiveFormsModule,
     FormsModule,
     NgbModule,
-    ToastModule
+    ToastModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
